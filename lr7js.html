@@ -67,38 +67,10 @@
             font-size: 34px;
             -webkit-text-stroke: 10px rgba(99, 25, 210, 0.326);
         }
-   /*     
-        @media (max-width: 993px){
-    #BallImage {
-        width: 4410px;
-    }
+      
 
-    
-}
-@media (max-width: 792px) {
-    input {
-        width: 70%;
-    }
-    button {
-        font-size: 2em;
-    }
-    #BallImage {
-        width: 10px;
-    }
-  
-    #answerText {
-        font-size: 60px;
-    }
-    .content-container {
-        text-align: center;
-        border-radius: 1330px;
-    }
-    h1 {
-            font-size: 24em;
-        }
-}
 
-*/
+
 .shake {
         animation: shake 0.5s ease infinite;
     }
@@ -156,7 +128,6 @@
 
         document.body.appendChild(container);
 
-
         const answers = [
             "Так",
             "Ні",
@@ -185,8 +156,7 @@
                 const randomAnswer = getAnswer();
                 answerText.textContent = randomAnswer;
                 image.classList.add("shake");
-            
-            setTimeout(() => {
+                 setTimeout(() => {
                 image.classList.remove("shake");
             }, 500);
             } else {
